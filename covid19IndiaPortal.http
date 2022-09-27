@@ -1,0 +1,61 @@
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY0Mjk1NDU4fQ.rAjs_6-iVEuSk19uBWt_aAUfOZXA3ac_xYDqOOKw1YM
+
+###
+GET http://localhost:3000/states/7/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY0Mjk1NDU4fQ.rAjs_6-iVEuSk19uBWt_aAUfOZXA3ac_xYDqOOKw1YM
+
+
+###
+POST http://localhost:3000/districts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY0Mjk1NDU4fQ.rAjs_6-iVEuSk19uBWt_aAUfOZXA3ac_xYDqOOKw1YM
+
+
+{
+  "districtName": "Adoni",
+  "stateId": 3,
+  "cases": 561,
+  "cured": 56,
+  "active": 315,
+  "deaths": 8
+}
+
+
+###
+GET http://localhost:3000/districts/7/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY0Mjk1NDU4fQ.rAjs_6-iVEuSk19uBWt_aAUfOZXA3ac_xYDqOOKw1YM
+
+
+###
+DELETE http://localhost:3000/districts/767/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY0Mjk1NDU4fQ.rAjs_6-iVEuSk19uBWt_aAUfOZXA3ac_xYDqOOKw1YM
+
+
+###
+PUT http://localhost:3000/districts/767/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY0Mjk1NDU4fQ.rAjs_6-iVEuSk19uBWt_aAUfOZXA3ac_xYDqOOKw1YM
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+GET http://localhost:3000/states/7/stats
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY0Mjk1NDU4fQ.rAjs_6-iVEuSk19uBWt_aAUfOZXA3ac_xYDqOOKw1YM
